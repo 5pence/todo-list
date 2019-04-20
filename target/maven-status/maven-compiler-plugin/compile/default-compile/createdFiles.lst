@@ -1,3 +1,5 @@
 spencer\barriball\config\WebConfig.class
 spencer\barriball\config\WellAppInitializer.class
 spencer\barriball\controller\DemoController.class
+spencer\barriball\service\DemoService.class
+spencer\barriball\service\DemoServiceImpl.class
