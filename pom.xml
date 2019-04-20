@@ -7,6 +7,7 @@
     <groupId>spencer.barriball</groupId>
     <artifactId>todo-list</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <springwebmvc.version>5.1.6.RELEASE</springwebmvc.version>
@@ -60,6 +61,14 @@
                     <target>${java.version}</target>
                     <source>${java.version}</source>
                     <release>${java.version}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>
