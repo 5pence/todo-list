@@ -1,2 +1,3 @@
 spencer\barriball\config\WebConfig.class
 spencer\barriball\config\WellAppInitializer.class
+spencer\barriball\controller\DemoController.class
