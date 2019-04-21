@@ -1,4 +1,6 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="spencer.barriball.util.Mappings" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,6 +12,9 @@
 </head>
 <body>
     <div align="center">
+        <c:url var="addUrl" value="${Mappings.ADD_ITEM}" />
+        <a href="${addUrl}">New Item</a>
+
         <table border="1" cellpadding="5">
 
             <caption><h2>Todo Items</h2></caption>
@@ -17,12 +22,18 @@
             <tr>
                 <th>Title</th>
                 <th>Deadline</th>
+                <th>Delete</th>
             </tr>
 
             <c:forEach var="item" items="${todoData.items}">
-                <tr>
+
+                <c:url var="deleteUrl" value="${Mappings.DELETE_ITEM}">
+                    <c:param name="id" value="${item.id}"/>
+                </c:url>
+
                     <td><c:out value="${item.title}"/></td>
                     <td><c:out value="${item.deadLine}"/></td>
+                    <td><a href="${deleteUrl}">Delete</a></td>
                 </tr>
             </c:forEach>
 
