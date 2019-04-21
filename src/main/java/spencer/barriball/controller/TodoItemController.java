@@ -12,15 +12,18 @@ import spencer.barriball.util.ViewNames;
 @Controller
 public class TodoItemController {
 
+    // == fields ==
+    private final TodoItemServiceImpl todoItemService;
+
     // == constructor ==
     @Autowired
-    public TodoItemController() {
+    public TodoItemController(TodoItemServiceImpl todoItemService) {
+        this.todoItemService = todoItemService;
     }
 
     // == model attribute ==
     @ModelAttribute
     public TodoData todoData() {
-        TodoItemServiceImpl todoItemService = new TodoItemServiceImpl();
         return todoItemService.getData();
     }
 
