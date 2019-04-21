@@ -1,5 +1,6 @@
 package spencer.barriball.service;
 
+import lombok.Getter;
 import org.springframework.stereotype.Service;
 import spencer.barriball.model.TodoData;
 import spencer.barriball.model.TodoItem;
@@ -8,6 +9,7 @@ import spencer.barriball.model.TodoItem;
 public class TodoItemServiceImpl implements TodoItemService {
 
     // == fields ==
+    @Getter
     private final TodoData data = new TodoData();
 
     // == public methods ==
@@ -29,10 +31,5 @@ public class TodoItemServiceImpl implements TodoItemService {
     @Override
     public void updateItem(TodoItem item) {
         data.updateItem(item);
-    }
-
-    @Override
-    public TodoData getData() {
-        return data;
     }
 }
