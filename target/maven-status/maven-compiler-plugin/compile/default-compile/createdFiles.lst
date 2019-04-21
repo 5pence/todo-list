@@ -1,5 +1,10 @@
 spencer\barriball\config\WebConfig.class
-spencer\barriball\config\WellAppInitializer.class
 spencer\barriball\controller\DemoController.class
 spencer\barriball\service\DemoService.class
+spencer\barriball\model\TodoData.class
 spencer\barriball\service\DemoServiceImpl.class
+spencer\barriball\config\WebAppInitializer.class
+spencer\barriball\model\TodoItem.class
+spencer\barriball\util\ViewNames.class
+spencer\barriball\util\Mappings.class
+spencer\barriball\controller\TodoItemController.class
