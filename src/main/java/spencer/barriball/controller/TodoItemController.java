@@ -4,8 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import spencer.barriball.model.TodoData;
+import spencer.barriball.model.TodoItem;
 import spencer.barriball.service.TodoItemServiceImpl;
+import spencer.barriball.util.AttributeNames;
 import spencer.barriball.util.Mappings;
 import spencer.barriball.util.ViewNames;
 
@@ -31,5 +34,10 @@ public class TodoItemController {
     @GetMapping(Mappings.ITEMS)
     public String items() {
         return ViewNames.ITEMS_LIST;
+    }
+
+    @PostMapping(Mappings.ADD_ITEM)
+    public String processItem(@ModelAttribute(AttributeNames.TODO_ITEM) TodoItem todoItem) {
+        return "redirect:/" + Mappings.ITEMS;
     }
 }

@@ -2,6 +2,7 @@ spencer\barriball\controller\DemoController.class
 spencer\barriball\service\DemoService.class
 spencer\barriball\service\TodoItemServiceImpl.class
 spencer\barriball\service\TodoItemService.class
+spencer\barriball\util\AttributeNames.class
 spencer\barriball\util\ViewNames.class
 spencer\barriball\config\WebConfig.class
 spencer\barriball\model\TodoData.class

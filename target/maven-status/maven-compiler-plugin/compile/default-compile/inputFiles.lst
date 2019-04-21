@@ -2,11 +2,12 @@ C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\util\ViewNames.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\service\TodoItemService.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\service\DemoServiceImpl.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\controller\TodoItemController.java
-C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\controller\DemoController.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\config\WebConfig.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\model\TodoData.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\model\TodoItem.java
-C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\service\DemoService.java
-C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\config\WebAppInitializer.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\service\TodoItemServiceImpl.java
 C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\util\Mappings.java
+C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\util\AttributeNames.java
+C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\controller\DemoController.java
+C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\service\DemoService.java
+C:\code\JavaCourse\todo-list\src\main\java\spencer\barriball\config\WebAppInitializer.java
